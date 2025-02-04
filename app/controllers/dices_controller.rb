@@ -10,6 +10,8 @@ class DicesController < ApplicationController
   end
 
   def two_ten
+    @first_die = rand(1..10)
+  @second_die = rand(1..10)
     render({ :template => "dices/two_ten" })
   end
 
