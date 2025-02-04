@@ -21,6 +21,11 @@ class DicesController < ApplicationController
   end
 
   def five_four
+    @first_die = rand(1..4)
+    @second_die = rand(1..4)
+    @third_die = rand(1..4)
+    @fourth_die = rand(1..4)
+    @fifth_die = rand(1..4)
     render({ :template => "dices/five_four" })
   end
 end
