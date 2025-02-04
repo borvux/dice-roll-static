@@ -1,0 +1,12 @@
+<h1>1d20</h1>
+<ul>
+  <li>
+    <% if @die == 1 %>
+      <p style="color: red"><%= @die %></p>
+    <% elsif @die == 20 %>
+      <p style="color: green"><%= @die %></p>
+    <% else %>
+      <p><%= @die %></p>
+    <% end %>
+  </li>
+</ul>
